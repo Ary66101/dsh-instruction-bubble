@@ -1,0 +1,6 @@
+# dsh-instruction-bubble bundle patch: mounts the plugin into the profile tree.
+# The loader entry is resolved from this package's main (lib/index.js); the
+# browser half is served from exports["./client"] (lib/client.js).
+- insert:
+    - id: instruction-bubble
+      name: 'dsh-instruction-bubble'
